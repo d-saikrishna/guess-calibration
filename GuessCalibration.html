@@ -28,8 +28,7 @@
 <div id="controls" style="margin: 0 auto;width: 700px;">
   <div style="text-align:center">
     <h1 align="center">Guess Calibration Game</h1>
-    <h4 align="center">current game / game selector: <select id="game_selector" class="active"></select>
-</h4>
+      <h4 align="center"><span id="game_title"></span> &nbsp;|&nbsp; game selector: <select id="game_selector" class="active"></select></h4>
   </div>
   <form id="controls_form">
     <div id="log" style="width:621px;height:200px;overflow-y:scroll;border:1px solid black;padding:2px;resize:both;">
@@ -37,10 +36,11 @@
     <br>
     <i>Bet on the outcome using the slider to control the payouts.</i>
     <br>
+    <div id="question" style="margin: 10px 0; font-size: 1.1em; font-weight: bold; min-height: 2em;"></div>
     <div style="width:621px">
-      <span>Payout on <span class="hot"><span name="tails"></span>: <span id="payoff0"></span></span>
+      <span>Payout on <span class="hot"><span id="tails"></span>: <span id="payoff0"></span></span>
       </span>
-      <span style="float:right">Payout on <span class="hot"><span name="heads"></span>: <span id="payoff1"></span></span>
+      <span style="float:right">Payout on <span class="hot"><span id="heads"></span>: <span id="payoff1"></span></span>
       </span>
       <br>
     </div>
