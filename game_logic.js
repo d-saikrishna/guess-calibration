@@ -46,7 +46,7 @@ BG.do_refresh = function () {
   $("[name='tails']").html(BG.labels[0]);
   $("#score").html(BG.score.toFixed(3));
   $("#plays").html(BG.plays);
-  $("#score_per_play").html((BG.score / BG.plays).toFixed(3));
+  $("#score_per_play").html(BG.plays > 0 ? (BG.score / BG.plays).toFixed(3) : "0.000");
   $("#game_title").html(BG.title);
   BG.pbar.fillStyle = "#B0E";
   BG.pbar.fillRect(s.value, 0, 1, 10);
